@@ -1,0 +1,6 @@
+rustworkx
+xxhash
+numpy
+torch>=2.0.0
+graphviz
+loguru

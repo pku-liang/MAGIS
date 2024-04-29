@@ -7,7 +7,7 @@
 python -m pip install -r requirements.txt
 cd python && python3 setup.py [develop|install]
 ```
-## Simple Usage Example 
+## Simple Example 
 ```python 
 from magis.testing import nn
 from magis.testing import setup_training_graph, run_optimization 
@@ -52,7 +52,10 @@ Note that:
 			- `taso_rules/`: Rules from TASO 
 			- `sched_rules.py`: Rules derived from scheduling methods like Re-materialization and Swapping.
 		- `misc.py`: Transformations other than rewriting rules
-		- `mutator.py`: Higher abstractions of rewriting rules and other transformations. A mutator accepts a computation graph as input and generates a sequence of new graphs. Different mutators can be composited via combinators like "chain", "zip", "truncate" etc. 
+		- `mutator.py`: An abstraction of rewriting rules and other transformations. A mutator accepts a computation graph as input and generates a sequence of new graphs. Different mutators can be composited via combinators like "chain", "zip", "truncate" etc. 
+	- `backend/`: Backends to compile/execute given graph + schedule 
+		- `base.py`: Basic declarations. A backend provides interfaces to measure latency for a single operator and memory & latency for a whole graph.  A codegen backend additionally provides interfaces to generate code for each type of operators.
+		- `torch_cuda.py`: A backend to generate python-code invoking PyTorch API. 
 	- `optimizer.py`: Optimizer to optimize graph's memory & latency with the help of scheduler, simulator, and mutator.
 	-  `testing/`: Utilities for testing 
 		- `nn/`: Some neural networks defined using MAGIS Graph IR 

@@ -29,6 +29,7 @@ run_optimization(
 The columns in `results.csv` represent: "name", "device memory limit", "latency limit", "memory limit", "latency limit ratio", "memory limit ratio", "weight memory", "opt-is-prof-result", "opt-latency", "opt-memory", "opt-simul-latency", "opt-simul-memory", "ori-is-prof-result", "ori-latency", "ori-memory", "ori-simul-latency", "ori-simul-memory"
 
 Note that: 
+- "memory" means peak-memory-usage (divided by data-type-bytes). 
 - "opt" means "optimization" and "ori" means "origin". 
 - "opt-is-prof-result" is True meaning that "opt-latency" and "opt-memory" are from real hardware profiling. 
 - "opt-is-prof-result" is False meaning that "opt-latency" & "opt-memory" equals to "opt-simul-latency" & "opt-simul-memory", which are from simulation based on single-operator profiling results and memory analysis. 

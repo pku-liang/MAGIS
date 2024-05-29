@@ -1,6 +1,6 @@
 # MAGIS: <ins>M</ins>emory Optimiz<ins>a</ins>tion via Coordinated <ins>G</ins>raph Transformat<ins>i</ins>on and <ins>S</ins>cheduling for DNN
 
-[\[Paper\]](https://dl.acm.org/doi/10.1145/3620666.3651330) [\[Poster\]](./media/magis-asplos24-poster.pdf) [\[Slides\]](./media/magis-asplos24-talk.pdf)
+[\[Link\]](https://dl.acm.org/doi/10.1145/3620666.3651330) [\[Paper\]](./media/magis-asplos24-paper.pdf) [\[Poster\]](./media/magis-asplos24-poster.pdf) [\[Slides\]](./media/magis-asplos24-talk.pdf)
 
 ## Install
 ```shell
